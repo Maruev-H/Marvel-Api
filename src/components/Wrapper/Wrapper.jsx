@@ -25,10 +25,15 @@ export default function Wrapper() {
               <Card item={item} />
             ))}
           </div>
-          <Button text="LOAD MORE" className="button red" onClick={moreCards} disabled={(cards === 99)}/>
+          <Button
+            text="LOAD MORE"
+            className="button red"
+            onClick={moreCards}
+            disabled={cards === 99}
+          />
         </div>
         {Object.keys(person).length > 0 ? (
-          <div key={person.id}>
+          <div key={person.id} className="head">
             <div className="Tooler__pers">
               <div>
                 <img
@@ -38,13 +43,19 @@ export default function Wrapper() {
                 />
               </div>
               <div>
-                <h1>{person.name}</h1>
+                <h1>
+                  {person.name.length > 20
+                    ? `${person.name.substring(0, 20)}...`
+                    : person.name}
+                </h1>
                 <div>
                   <Link to={`/character/${person.id}`}>
                     <Button text="home page" className="button red" />
                   </Link>
                 </div>
-                <a href={person.urls[1].url}><Button text="wiki" className="button gray" /></a>
+                <a href={person.urls[1].url}>
+                  <Button text="wiki" className="button gray" />
+                </a>
               </div>
             </div>
             <p>{person.description}</p>

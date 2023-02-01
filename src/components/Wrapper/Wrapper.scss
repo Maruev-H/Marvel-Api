@@ -8,7 +8,6 @@
     right: -40px;
   }
   &__pers {
-    margin: 0 0 0 25px;
     width: 425px;
     display: flex;
     button {
@@ -27,7 +26,6 @@
     margin-right: 25px;
   }
   p {
-    margin: 0 0 0 25px;
     max-width: 375px;
     font-size: 14px;
     font-weight: 400;
@@ -75,6 +73,13 @@
     }
   }
 }
+.head {
+  width: 425px;
+  height: 350px;
+  margin: 0 0 0 25px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 25px 0 0 25px;
+}
 .da {
   box-shadow: 5px 5px 5px 5px rgba(255, 0, 0, 0.3);
   transform: translate(0, -10px) scaleY(1);
@@ -115,3 +120,4 @@
     background: rgba(196, 196, 196, 1);
   }
 }
+
