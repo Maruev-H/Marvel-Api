@@ -24,7 +24,7 @@ const reducer = (state = initialState, action) => {
 
       return {
         ...state,
-        person: [...state.characters.filter((item)=> item.id === action.payload.id)]
+        person: [...state.characters.filter((item)=> item.id === action.payload.id)][0]
       };
 
     default:

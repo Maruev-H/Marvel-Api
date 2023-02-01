@@ -5,7 +5,7 @@ import './Wrapper.scss'
 export default function Card({item,}) {
   const dispath = useDispatch()
 
-  const person = useSelector((state)=> state.person)[0]
+  const person = useSelector((state)=> state.person)
   const fetchCard = (id) => {
       dispath({
         type: 'CARD_INFO',

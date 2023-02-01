@@ -15,7 +15,7 @@ export default function RandomCard() {
   const fetchRandomCard = async () => {
     setRandomCard(characters[Math.floor(Math.random() * 99)]);
   };
-
+  
   useEffect(() => {
     setRandomCard(characters[0] || {})
   }, [characters]);
