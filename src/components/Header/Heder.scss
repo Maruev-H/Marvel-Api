@@ -1,0 +1,26 @@
+nav {
+    margin: 50px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+    button {
+        cursor: pointer;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33px;
+        background: none;
+        border: none;
+        span{
+            color:rgba(159, 0, 19, 1)
+        }
+    }
+    
+}
+.active{
+    button{
+        color:rgba(159, 0, 19, 1);
+    }
+}

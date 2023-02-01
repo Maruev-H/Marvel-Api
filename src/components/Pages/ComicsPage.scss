@@ -1,0 +1,36 @@
+.comPage {
+  display: flex;
+  flex-direction: row;
+  &__img {
+    max-width: 293px;
+    margin-right: 50px;
+  }
+  h1 {
+    margin: 0ch;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  p {
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  span {
+    color: rgba(159, 0, 19, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+}
+.back {
+    margin-left: auto;
+    h2 {
+      width: 76px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    margin: 0;
+  }
+}

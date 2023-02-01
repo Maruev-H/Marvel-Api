@@ -1,0 +1,19 @@
+.button {
+  width: 101px;
+  height: 38px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  clip-path: polygon(-40px 100%, 0% 100%, 40px 60px, 150% 0%, 80px -40px);
+  
+}
+.red {
+  background: rgba(159, 0, 19, 1);
+}
+.gray{
+    background: rgba(92, 92, 92, 1);
+}

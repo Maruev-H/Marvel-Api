@@ -1,0 +1,76 @@
+.Information {
+  width: 1100px;
+  height: 100px;
+  background: rgba(35, 34, 34, 1);
+  color: white;
+  display: flex;
+  margin-bottom: 45px;
+  h1 {
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 24px;
+    margin: 18px 0;
+    width: 670px;
+  }
+  .Avengers {
+    margin: 0 83px 0 45px;
+  }
+}
+.Comics__container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  justify-content: space-between;
+}
+.Comics__image {
+  margin-top: 55px;
+  width: 225px;
+  height: 346px;
+  img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+.Comics__card {
+  cursor: pointer;
+  p {
+    max-width: 230px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin: 10px 0 5px 0;
+  }
+  span{
+        color: gray;
+  }
+}
+.Comicses {
+  button {
+    display: block;
+    margin: 55px auto;
+    width: 170px;
+    clip-path: polygon(-40px 38px, 0% 100%, 40px 90px, 230px 0px, 80px -40px);
+  }
+}
+.Person {
+  position: relative;
+  display: flex;
+
+  &__img {
+    width: 293px;
+    height: 293px;
+    margin-right: 50px;
+  }
+  p {
+    margin: 0 0 0 0;
+    max-width: 550px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: black;
+  }
+  h1{
+    margin: 0 0 25px 0;
+  }
+}
