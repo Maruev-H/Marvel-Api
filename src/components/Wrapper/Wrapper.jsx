@@ -25,7 +25,7 @@ export default function Wrapper() {
               <Card item={item} />
             ))}
           </div>
-          <Button text="LOAD MORE" className="button red" onClick={moreCards} />
+          <Button text="LOAD MORE" className="button red" onClick={moreCards} disabled={(cards === 99)}/>
         </div>
         {Object.keys(person).length > 0 ? (
           <div key={person.id}>
@@ -44,7 +44,7 @@ export default function Wrapper() {
                     <Button text="home page" className="button red" />
                   </Link>
                 </div>
-                <Button text="wiki" className="button gray" />
+                <a href={person.urls[1].url}><Button text="wiki" className="button gray" /></a>
               </div>
             </div>
             <p>{person.description}</p>

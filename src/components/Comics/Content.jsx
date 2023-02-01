@@ -39,7 +39,7 @@ export default function Content() {
         <ComicsCard item={item}/>
       )}
       </div>
-      <Button text="LOAD MORE" className="button red" onClick={moreComics}/>
+      <Button text="LOAD MORE" className="button red" onClick={moreComics} disabled={(comicsAmount === 100)}/>
     </div>
   )
 }

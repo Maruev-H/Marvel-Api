@@ -42,7 +42,7 @@ export default function RandomCard() {
               <Link to={`/character/${randomCard.id}`}>
                 <Button text="home page" className="button red" />
               </Link>
-              <Button text="wiki" className="button gray" />
+              <a href={randomCard.urls[1].url}><Button text="wiki" className="button gray"/></a>
             </div>
           </div>}
         </div>
