@@ -1,6 +1,6 @@
 const initialState = {
-  characters: [[]],
-  person: [[]],
+  characters: [],
+  person: {},
   comics: [],
 };
 const reducer = (state = initialState, action) => {

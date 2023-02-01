@@ -13,10 +13,8 @@ export default function ComicsPage() {
   const comics = useSelector((state) => state.comics);
 
   const { id } = useParams();
-  console.log(comics)
   function comicsHome() {
     setComPage(comics.filter((item) => item.id === +id)[0]);
-    console.log(comPage);
   }
 
   useEffect(() => {

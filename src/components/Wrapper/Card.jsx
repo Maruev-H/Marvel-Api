@@ -16,7 +16,7 @@ export default function Card({item,}) {
   };
   
   return (
-      <div className={`card ${person[0].id === item.id ? 'da':'net'}`} onClick={()=>{fetchCard(item.id)}} key={item.id}>
+      <div className={`card ${person.id === item.id ? 'da':'net'}`} onClick={()=>{fetchCard(item.id)}} key={item.id}>
         <img  className='image' src={`${item.thumbnail?.path}.${item.thumbnail?.extension}`} alt='img'/>
         <div className='charaster__name'>
           <h1>{item.name}</h1>

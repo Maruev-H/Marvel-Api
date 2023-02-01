@@ -9,8 +9,9 @@ import Tanos from "../pictures/bg_asset.png";
 
 export default function Wrapper() {
   const characters = useSelector((state) => state.characters);
-  const person = useSelector((state) => state.person)[0];
+  const person = useSelector((state) => state.person[0]);
   const [cards, setCards] = useState(9);
+  console.log(person)
 
   function moreCards() {
     setCards(cards + 3);
